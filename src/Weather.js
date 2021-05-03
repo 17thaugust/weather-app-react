@@ -11,12 +11,12 @@ function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
     ready: true, 
-        temperature: response.data.main.temp,
+    temperature: response.data.main.temp,
     wind: response.data.wind.speed,
     humidity: response.data.main.humidity,
     city: response.data.name,
     date: new Date(response.data.dt * 1000),
-    iconUrl: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+    iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     description: response.data.weather[0].description,
     });
 
