@@ -11,7 +11,7 @@ export default function App() {
     
       <footer>
         Coded by {" "}
-      <a href="https://github.com/17thaugust/weather-app-react">Karolina</a>
+      <a href="https://github.com/17thaugust/weather-app-react" target="_blank" rel="noopener noreferrer">Karolina</a>
     </footer>
     </div>
     </div>
